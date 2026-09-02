@@ -157,7 +157,9 @@ body
 {
     .login-container
     {
-        margin: 40px auto;
+        margin: 40px 10px;
+        
+        width: auto;
     }
 
     .usuarios-container
