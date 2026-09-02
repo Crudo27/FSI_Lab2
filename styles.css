@@ -1,0 +1,103 @@
+body
+{
+    background-color: #498ae4;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.login-container
+{
+    padding: 10px 10px;
+
+    width: min(240px, calc(100% - 40px));
+    box-sizing: border-box;
+    margin: 100px auto;
+    background-color: #ffff;
+    text-align: center;
+    color: #7d7b7b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label
+{
+    font-size: 20px;
+    margin: 14px 20px;
+    font-weight: bold;
+}
+
+.inicio
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inicio input
+{
+    box-sizing: border-box;
+    padding: 10px 10px;
+
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: #e0e0e0;
+    border: none;
+    text-align: center;
+}
+
+.login-button
+{
+    box-sizing: border-box;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+    border: none;
+
+    background-color: #498ae4;
+    color: #ffffff;
+}
+
+.login-button:hover
+{
+    background-color: #3667ad;
+    cursor: pointer;
+    transition: scale 0.1s ease-in-out;
+}
+
+.login-button:active
+{
+    background-color: #325f9d;
+    scale: 0.96;
+    transition: scale 0.1s ease-in-out;
+}
+
+.forgot-password
+{
+    font-size: 10px;
+    color: #7d7b7b;
+    cursor: pointer;
+    text-decoration: none;
+    
+    transition: scale 0.1s ease-in-out;
+}
+
+.forgot-password:hover
+{
+    scale: 1.04;
+}
+
+.forgot-password:active
+{
+    scale: 0.96;
+}
+
+@media (max-width: 600px)
+{
+    .login-container
+    {
+        margin: 40px auto;
+    }
+}
