@@ -9,7 +9,6 @@ body
 .login-container
 {
     padding: 10px 10px;
-
     width: min(240px, calc(100% - 40px));
     box-sizing: border-box;
     margin: 100px auto;
@@ -39,7 +38,6 @@ body
 {
     box-sizing: border-box;
     padding: 10px 10px;
-
     margin-bottom: 5px;
     width: 100%;
     background-color: #e0e0e0;
@@ -53,9 +51,7 @@ body
     padding: 10px 10px;
     margin-bottom: 10px;
     width: 100%;
-    
     border: none;
-
     background-color: #498ae4;
     color: #ffffff;
 }
@@ -80,7 +76,6 @@ body
     color: #7d7b7b;
     cursor: pointer;
     text-decoration: none;
-    
     transition: scale 0.1s ease-in-out;
 }
 
@@ -94,10 +89,79 @@ body
     scale: 0.96;
 }
 
+.privada-container,
+.usuarios-container,
+.form-container
+{
+    width: min(900px, calc(100% - 40px));
+    margin: 60px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.usuarios-container table
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.usuarios-container th,
+.usuarios-container td
+{
+    border: 1px solid #bdbdbd;
+    padding: 10px;
+    text-align: left;
+}
+
+.usuarios-container th
+{
+    background-color: #e0e0e0;
+}
+
+.usuarios-container form
+{
+    margin: 0;
+}
+
+.form-container form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-container input
+{
+    padding: 8px;
+}
+
+.form-container button
+{
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.boton
+{
+    display: inline-block;
+    margin-right: 8px;
+    padding: 8px 12px;
+    background-color: #498ae4;
+    color: white;
+    text-decoration: none;
+}
+
 @media (max-width: 600px)
 {
     .login-container
     {
         margin: 40px auto;
+    }
+
+    .usuarios-container
+    {
+        overflow-x: auto;
     }
 }
